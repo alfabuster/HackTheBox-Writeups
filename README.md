@@ -1,76 +1,93 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Hack_The_Box-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Platform">
+  <img src="https://img.shields.io/badge/Focus-Offensive_Security-critical?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Focus">
+  <img src="https://img.shields.io/badge/OS-Linux_|_Windows-informational?style=for-the-badge&logo=linux&logoColor=white" alt="OS">
+</p>
 
-# HackTheBox Writeups
+# 🟢 Hack The Box — Writeups
 
-This repository contains my **writeups for machines from the HackTheBox platform**.
+Writeups for retired machines from the [Hack The Box](https://www.hackthebox.com) platform. Each writeup documents the full attack chain — from initial reconnaissance to root flag.
 
-HackTheBox machines simulate real-world penetration testing scenarios and require a structured approach to enumeration, exploitation, and privilege escalation.
-
----
-
-# Methodology
-
-When solving machines I generally follow this workflow:
-
-1. Reconnaissance
-2. Enumeration
-3. Vulnerability discovery
-4. Exploitation
-5. Privilege escalation
-6. Post-exploitation
+> **Note:** Writeups are published only for **retired machines** in accordance with HTB rules.
 
 ---
 
-# Repository Structure
-
-Each machine has its own folder containing the writeup.
-
-Example:
+## 📂 Repository Structure
 
 ```
-hackthebox-writeups
+htb-writeups/
 │
-├── README.md
-│
-├── machine-name
+├── <machine_name>/
 │   └── writeup.md
 │
-├── another-machine
+├── <machine_name>/
 │   └── writeup.md
+│
+└── README.md
 ```
 
 ---
 
-# Tools Used
+## 📋 Machines
 
-Common tools used during machine exploitation:
+| Machine | Difficulty | OS | Key Topics | Writeup |
+|---------|------------|-----|------------|---------|
+| *coming soon* | — | — | — | — |
 
-- Nmap
-- Rustscan
-- Burp Suite
-- Gobuster / FFUF
-- SQLMap
-- Netcat
-- LinPEAS
-- GTFOBins
-- Metasploit
+<!-- Example row:
+| Lame | 🟢 Easy | Linux | FTP misconfiguration, Samba CVE | [writeup](./lame/writeup.md) |
+-->
 
 ---
 
-# Notes
+## ✍️ Writeup Format
 
-Writeups usually focus on:
+Every writeup follows a consistent methodology:
 
-- enumeration techniques
-- vulnerability identification
-- exploitation steps
-- privilege escalation methodology
-
-The goal is to clearly document the attack path from **initial access to root/system**.
+- **Summary** — one-liner with the attack chain overview
+- **Reconnaissance** — port scanning, service detection
+- **Enumeration** — directory fuzzing, version fingerprinting, vulnerability research
+- **Exploitation** — initial foothold, CVE / custom exploit
+- **Privilege Escalation** — local enumeration, escalation path
+- **Flags** — user.txt & root.txt
+- **Lessons Learned** — key takeaways and techniques worth remembering
 
 ---
 
-# Disclaimer
+## 🛠 Toolbox
 
-These writeups are provided **for educational purposes only**.
+| Phase | Tools |
+|---|---|
+| **Scanning** | Nmap, Rustscan |
+| **Web** | Burp Suite, ffuf, Gobuster, curl |
+| **Exploitation** | SQLMap, Metasploit, custom scripts |
+| **Post-Exploitation** | LinPEAS, WinPEAS, GTFOBins, pspy |
+| **Cracking** | John the Ripper, Hashcat |
+| **General** | Python, CyberChef |
 
-Machines were solved on the official **HackTheBox platform with proper authorization**.
+---
+
+## 🧠 Topics Covered
+
+- Web exploitation (SQLi, SSRF, XXE, LFI/RFI, command injection, deserialization)
+- Linux & Windows privilege escalation
+- Active Directory attacks
+- Service enumeration and fingerprinting
+- CVE research and exploit adaptation
+- Tunneling and pivoting
+
+---
+
+## ⚠️ Disclaimer
+
+These writeups are published strictly for **educational and documentation purposes**.  
+Only retired machines are covered. Unauthorized access to computer systems is illegal.  
+Always obtain proper authorization before testing.
+
+---
+
+<p align="center">
+  <a href="https://github.com/alfabuster"><img src="https://img.shields.io/badge/GitHub-@alfabuster-181717?style=flat-square&logo=github" alt="GitHub"></a>
+  <a href="https://app.hackthebox.com/users/3071989"><img src="https://img.shields.io/badge/Hack_The_Box-alfabuster-9FEF00?style=flat-square&logo=hackthebox&logoColor=black" alt="HTB"></a>
+  <a href="https://alfabuster.com"><img src="https://img.shields.io/badge/Blog-alfabuster.com-00FF41?style=flat-square&logo=ghost&logoColor=white" alt="Blog"></a>
+</p>
