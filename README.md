@@ -67,17 +67,6 @@ Every writeup follows a consistent methodology:
 
 ---
 
-## 🧠 Topics Covered
-
-- Web exploitation (SQLi, SSRF, XXE, LFI/RFI, command injection, deserialization)
-- Linux & Windows privilege escalation
-- Active Directory attacks
-- Service enumeration and fingerprinting
-- CVE research and exploit adaptation
-- Tunneling and pivoting
-
----
-
 ## ⚠️ Disclaimer
 
 These writeups are published strictly for **educational and documentation purposes**.  
